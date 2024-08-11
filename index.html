@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoundScribe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Site Logo" />
+        <span>SoundScribe</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tutorial">Quick Tutorial</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="section">
+    <div class="container">
+      <h2>Welcome to SoundScribe</h2>
+      <p>Convert your text to speech easily and quickly!</p>
+      <div class="tts-container">
+        <textarea placeholder="Enter text"></textarea>
+        <select id="language-selector">
+          <option value="en-US">English (US)</option>
+          <option value="en-GB">English (UK)</option>
+          <option value="es-ES">Spanish (Spain)</option>
+          <!-- Add more languages as needed -->
+        </select>
+        <select id="voice-selector">
+          <!-- Dynamic voice options will be populated here -->
+        </select>
+        <button id="convert-btn">Convert to Speech</button>
+        <button id="download-btn" disabled>Download MP3</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="tutorial" class="section">
+    <div class="container">
+      <h2>Quick Tutorial</h2>
+      <ol class="tutorial-steps">
+        <li><strong>Enter text:</strong> Type your text into the text area provided.</li>
+        <li><strong>Select language and voice:</strong> Choose your preferred language and voice from the dropdown menus.
+        </li>
+        <li><strong>Convert text to speech:</strong> Click the "Convert to Speech" button to generate the audio.</li>
+        <li><strong>Listen and download:</strong> Use the "Play" button to listen to the speech, and click the "Download
+          MP3" button to save the audio file.</li>
+      </ol>
+    </div>
+  </section>
+
+
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Features</h2>
+      <p>Discover the features that make our tool unique.</p>
+    </div>
+  </section>
+
+  <section id="faqs" class="section">
+    <div class="container">
+      <h2>FAQs</h2>
+      <p>Find answers to the most common questions.</p>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <div class="container">
+      <h2>Contacts</h2>
+      <p>Get in touch with us for more information.</p>
+    </div>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
